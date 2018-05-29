@@ -3,14 +3,31 @@
 	<head>
 		<title></title>
 
-		<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Work+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Roboto:300|Source+Sans+Pro" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 
+		<style type="text/css">
+			.hidden
+			{
+				display: none;
+			}
+
+			#viewMore:hover{
+				color: black;
+				cursor: pointer;
+			}
+
+			#viewLess:hover{
+				color: black;
+				cursor: pointer;
+			}
+		</style>
+
 	</head>
-	<body style="margin: 0px 0px 0px 0px; background-color: #FAFAFA; font-family: 'Work Sans', sans-serif;">
+	<body>
 		<div id="body" style="">
-			<div id="header" style="padding: 10%; padding-top: 5%;padding-bottom: 20px;">
-				<div><a style="font-size: 90px;" href="#home">Opinion</a><hr></hr></div>
+			<div id="header">
+				<div><a style="font-size: 90px; font-family: 'Roboto', sans-serif;" href="index.html">Opinion</a><hr></hr></div>
 			</div>
 
 			<ul>
@@ -18,60 +35,114 @@
 				<li class="dropdown">
 					<a class="dropbtn" href="#life">Life</a>
 					<div class="dropdown-content">
-						<a href="#">Beauty</a>
-						<a href="#">Fashion</a>
-						<a href="#">Expression</a>
+						<a href="#Beauty">Beauty</a>
+						<a href="#Fashion">Fashion</a>
+						<a href="#Expression">Expression</a>
 					</div>
 				</li>
 				<li><a href="opinion.html">Opinion</a></li>
-				<li class="dropdown"><a class="dropbtn" href="community">Community</a>
+				<li class="dropdown"><a class="dropbtn" href="community.html">Community</a>
 					<div class="dropdown-content">
-						<a href="#">Type 1 Hair</a>
-						<a href="#">Type 2 Hair</a>
-					    <a href="#">Type 3 Hair</a>
-						<a href="#">Type 4 Hair</a>
+						<a href="community.html">Type 1 Hair</a>
+						<a href="community.html">Type 2 Hair</a>
+					    <a href="community.html">Type 3 Hair</a>
+						<a href="community.html">Type 4 Hair</a>
 					</div>
 				</li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			
-			<div id="mid" style="text-align: center;">
-				<div class="imgs"><img style="width: 100%;" id="slider" src="Photos/kaepernick1.jpg"></div>
-				<div class="imgs" style="text-align: left; margin: 10%; padding: 3%; background-color: #FAF4D4;">
-					<p>Lorem ipsum dolor amet pitchfork occupy gluten-free, pour-over jean shorts shoreditch blue bottle echo park. Vaporware retro wayfarers, copper mug health goth tofu mixtape. Umami hell of humblebrag, jianbing raw denim tumblr you probably haven't heard of them meh ennui post-ironic jean shorts heirloom. Snackwave copper mug slow-carb adaptogen, tacos actually messenger bag pork belly craft beer sriracha food truck microdosing helvetica twee. Skateboard irony chambray prism live-edge pabst selvage post-ironic fam. Plaid scenester brunch single-origin coffee.</p>
-					<p>Roof party VHS tumeric trust fund, dreamcatcher shoreditch coloring book pok pok meh chicharrones leggings ethical etsy 3 wolf moon. Leggings synth af paleo 8-bit sustainable man braid bicycle rights meggings. Tote bag vegan yr put a bird on it four dollar toast lo-fi blue bottle wayfarers glossier trust fund small batch microdosing raclette edison bulb succulents. Humblebrag salvia blog seitan, pour-over raclette wolf paleo.</p>
-					<p>Adaptogen portland deep v bicycle rights banh mi YOLO skateboard wayfarers lyft fashion axe. Schlitz chambray chartreuse, brooklyn vape viral fam occupy. VHS bitters kickstarter single-origin coffee fingerstache man braid keytar four loko flexitarian. Vinyl twee hot chicken, hella snackwave humblebrag cardigan kale chips tumeric health goth. Occupy ramps next level gastropub echo park chicharrones lo-fi activated charcoal lomo pork belly kitsch gentrify viral. Letterpress health goth street art, pabst green juice portland tilde direct trade small batch stumptown.</p>
-					<p>Cardigan poke organic pinterest gentrify selfies. Gentrify jianbing cardigan food truck, asymmetrical salvia chartreuse bitters. Hexagon next level locavore retro snackwave neutra brooklyn. Aesthetic flexitarian edison bulb subway tile paleo, pabst XOXO. Flannel art party neutra, vegan roof party pour-over gastropub la croix kinfolk kitsch cold-pressed aesthetic cardigan XOXO. Pickled thundercats skateboard deep v intelligentsia 8-bit. Beard 90's humblebrag shoreditch bicycle rights before they sold out heirloom.</p>
-					<p>Meggings live-edge la croix salvia shaman hammock neutra PBR&B locavore gastropub. Jianbing chillwave bitters sartorial. Thundercats fanny pack messenger bag, helvetica banjo twee pinterest post-ironic iPhone prism hell of. Tbh cold-pressed farm-to-table hammock thundercats direct trade, four dollar toast pok pok snackwave freegan roof party humblebrag PBR&B hot chicken truffaut. Knausgaard ethical gluten-free messenger bag deep v poutine. Vexillologist scenester PBR&B polaroid, slow-carb green juice YOLO humblebrag.</p>
-						
-					<br>
-					Oh. You need a little dummy text for your mockup? How quaint.
-					<br>
-					I bet you’re still using Bootstrap too…
+			<div id="mid">
+				<div style="background-color: #273859; padding: 3%; margin-bottom: 5%; margin-top: 5%;"><h1 style="color: #5B85D9; font-size: 50px;">Featured Articles</h1></div>
+				<h1>Colin Kaepernick's Pro 'Fro</h1>
+				<h3>By Trinity Sazo</h3>
+				<div class="imgs"><img style="width: 100%;" id="slider" src="Photos/kaepernick1.jpg">
+					<div style="">http://thesource.com/2016/09/03/kapsoblack-the-latest-in-black-twitters-support-of-colin-kaepernick/</div>
 				</div>
-				<div class="imgs" style="background-color: #273859; padding: 3%; margin-bottom: 10%;"><h1 style="color: #5B85D9;">Everything from Strands to Twists</h1></div>
-				<div class="imgs" id="container" style="text-align: center;">
-					<div class="socialMedia">
-						<div style="width: 100%; background-color: #273859; height: 50px; color: #F2E7B4; font-size: 20px;">
-							Instagram
-						</div>
+				<div class="text">
+					<p>Colin Kaepernick, a former American football player for the 49ers, has faced constant criticism ever since his protest to kneel during the national anthem at the start of his football games. In 2016, he started a movement to kneel when the anthem played as it represented that he could not support a country that did not protect the rights of its citizens, colored and people who are simply disadvantaged. </p>
+					<p>Many misinterpreted his actions and morphed the significance of his actions. Some said he was disrespecting veterans who have served in the military while others read his protest as a way to gain more publicity rather than taking a stance on social injustice. Before the fact, Kaepernick made a statement on how he respects veterans and his refusal to stand during the anthem branches out to him not tolerating how even veterans are being treated in our nation.</p>
+					<p>The Niners did not do well that season, or the one previously. Thus Kaepernick faced the possibility of not making the team for the following season. In light of this, the quarterback opted as a free agent. To this day, he remains undrafted (Branch).</p>
+					<p class="hidden">Michael Vick, a former football quarterback, appeared on “Speak For Yourself,” a feature of Fox Sports, and commented on Kaepernick’s image. Vick advised for Kaepernick to mend his physical appearance first hand. In other words: fix his hair. Since the wave of social injustices revolving around black lives picked up, Kaepernick chose to grow out his hair into an afro rather than maintain his familiar buzzcut.</p>
+					<p class="hidden">Vick states,</p>
+					<blockquote class="hidden">“First thing we got to get Colin to do is cut his hair. I’m not up here to try to be politically correct but even if he puts it in cornrows, I don’t think he should represent himself in that way, in terms of the hairstyle. Just go clean cut. Why not? You’re already dealing with a lot, a lot of controversy surrounding this issue. The thing that he needs to do is just try to be presentable.” (Gartland)</blockquote>
+					<p class="hidden">Through this mindset, it is clear to see that Vick is inadvertently stating that loose curly hair is characteristically unprofessional. In contrast, straight hair down is socially acceptable in a professional setting. Why should curly hair be seen as unpresentable in the first place?</p>
+					<p class="hidden">First off, in a professional setting, appearances are key to being perceived as organized. Clean cut suits are preferable, paired with freshly ironed button downs and sharp shoes to finish it off. Every aspect of dress is controlled and flattened. Curly hair can come off as wild. It is difficult to control the twisted strands and make them conform to a style, especially when loose. Hence, unruly and twisted locks could come off as unorganized and messy. That does not mean that they should.</p>
+					<p class="hidden">People with curly hair are pressured into finding ways to straighten or limit the amount curls that appear on their head when going on interviews or any work environment. Yet, it is taxing to have to constantly hide such a prominent physical aspect of their bodies from day to day. Curly hair might be unruly, but the way it flows does not represent the hygiene of the person themselves.</p>
+					<p class="hidden">For Colin Kaepernick, his hair is much more than appearance: his afro stands for how he refuses to follow the status quo and embrace the history of his hair and his being. He should not be apologetic for the body he was born into, the color of his skin, or the texture of his hair. </p>
+					<p class="hidden">Vick is not wrong however. In society, afros can taint the perception others have on a person. </p>
+					<p class="hidden">With celebrities publically refusing to restrain their hair, it is hoped that the stigma against loose curly hair in the workplace will change and become normalized. While it might seem “wholly” or “unruly,” the adjectives used to describe such hair should be “lively” and “bouncy.”</p>
+					<p class="hidden">As the love for curly hair resurges, hopefully Vick and the rest of the nation will recognize that curls are not unprofessional. The unemployment of Kaepernick does not have to do anything with his hair, and should not be part of the conversation when it comes to fixing his image. If he should choose to wear his hair in a ‘fro, he has every right to do so.</p>
+					<br>
+					<p><h3 class="hidden">References</h3></p>
+					<p class="hidden">Branch, John. “The Awakening of Colin Kaepernick.” The New York Times. The New York Times Company, 7 September 2017, nytimes.com. Accessed 22 May 2018.</p>
+					<p class="hidden">Gartland, Dan. “Michael Vick Says Colin Kaepernick Needs to Cut His Hair If He Wants to Be Signed by an NFL Team.” Sports Illustrated. Time Inc., 17 July 2017, si.com. Accessed 22 May 2018.</p>
+					<p id="viewMore" style="color: #A0A0A0" onclick="displayMore()">(View More)</p>
+					<p class="hidden" id="viewLess" style="color: #A0A0A0" onclick="displayLess()">(View Less)</p>
+
+
+				</div>
+				<div id="container">
+					<div class="extra" style="overflow: scroll;">
+						<div><h1>My Hair Jouney</h1></div>
+						<div class="line"></div>
+						<div><h3>By Trinity Sazo</h3></div>
+						<p>I am Trinity Sazo, the founder and Editor in Chief of Kinky Magazine. I was born in Boston, Massachusetts and moved to New York City by the age of 5. Currently I am a high school student who attends Phillip Academy, located in Andover, Massachusetts as a boarder. Having this independence from such an early age made me mature rapidly, as my parents were no longer there to keep track of my growth emotionally or socially. They both had to let go and allow their 14 year-old daughter form new habits and carry herself without their guidance. I had to learn how to take care of myself as my parents (my personal critics) were no longer around.</p>
+
+						<p>My hygiene was not bad, but I had a habit of ignoring my hair until my mom pointed out to me that it was time to detangle it. Not dissing her or my dad in any way, neither of them truly knew how to take care of my hair. I mean, they knew I had to wash and detangle it, but they did not know how often to detangle, what products to use, or how to keep my curls lively, tamed, and not frizzy. Thus I grew to hate the curls on top of my head. </p>
+
+						<p>I straightened my hair for months at a time starting back in primarily 3rd grade. I had straightened my hair at a salon prior to 3rd grade multiple times but not as often as I would once I started swimming regularly. On top of the chlorine and heat damage, my curls at the ripe age of 8 were dying. My mom and I viewed the process as “easy” and “a time saver” since neither of us would have to focus on washing and detangling the mess called my hair. From then on, I hated on my hair every chance I got: jokes in class, frequent defense against my dad on why my hair looked better straight, and any conversation in which my hair was mentioned.</p>
+
+						<p>The only time I liked my hair curly was when it was wet. The moment my hair dried, I shifted back into the same mindset, trying to straighten the frizzy mesh between curly and wavy strands. On the other hand, some of my friends told me that they actually liked my curly hair and wished that I would take better care of it. I always ignored them.</p>
+
+						<p>It was not until the end of my sophomore year in high school that I fully conceptualized the hatred I had for my own hair. I let the years of despise settle and breed a subtle self-hatred for myself. My confidence was always tainted with the intolerance I held for that one aspect of my body. This constant criticizing nature of myself started to actually normalize self-deprecating comments in my life. The things I said strayed from the subject of my hair and onto more superficial aspects of myself like my facial structure, skin, and overall body. </p>
+
+						<p>I could never be fully content with myself.</p>
+
+						<p>It was not until I was surrounded by people who embraced their curls was I influenced to do the same. </p>
+
+						<p>...</p>
 					</div>
-					<div class="socialMedia"> YouTube</div>
+					<div class="extra" style="overflow: scroll;">
+						<div><h1>'Hair' They Are: The Ideologies of Black Hair</h1></div>
+						<div class="line"></div>
+						<div><h3>By Tiffany Thomas</h3></div>
+						<p>A woman’s hair is said to be her crowning glory and manifestation of her femininity. Hair is considered a key indicator of a woman’s health and beauty. The Western standard of beauty defines beautiful hair as that which is long and preferably straight. Having such a standard creates a hair hierarchy, with long straight hair on the top of the hair pyramid and African American hair on the bottom. A black woman’s hair is traditionally dry, tightly coiled or curled. In order to attain the Western standard of beauty, the majority of African American women chemically straighten or “relax” their hair. This notion is embedded in media such as Sophisticate’s Black Hair Styles and Care Guide and other magazines featuring black women with straightened hair.</p>
+						<p>However, more recently, there has been an increase in the number of black women returning to their natural hair texture; that is, they are no longer chemically straightening their hair (Healy, 2011). The decision to return to the natural texture of one’s hair is termed “going natural.” The media has noticed black women’s sudden movement toward natural hair and has begun to include more natural-haired African Americans in advertisements. Some reasons that black women decide to go natural are: to follow a healthier lifestyle, to explore curiosity about their natural texture, to support their daughters’ hair, and to save the time and energy they spend using relaxers. Although the reasons for going natural may vary, it is an exciting journey nonetheless. Black women’s return to the natural state of their hair is often an act of self-awareness. On their journey to natural hair, many black women not only discover their natural texture but also the masked ideology (Hebdige, 1979) that natural black hair is unattractive and unacceptable in society, which stems from years of oppression and racism.</p>
+
+						<p>...</p>
+
+						<p><i style="font-size: 12px;">Originally published in the York Review 9.1</i></p>
+					</div>
 				</div>
-				<div class="imgs" style="text-align: left; padding: 10%;">
-					<p>Lorem ipsum dolor amet pitchfork occupy gluten-free, pour-over jean shorts shoreditch blue bottle echo park. Vaporware retro wayfarers, copper mug health goth tofu mixtape. Umami hell of humblebrag, jianbing raw denim tumblr you probably haven't heard of them meh ennui post-ironic jean shorts heirloom. Snackwave copper mug slow-carb adaptogen, tacos actually messenger bag pork belly craft beer sriracha food truck microdosing helvetica twee. Skateboard irony chambray prism live-edge pabst selvage post-ironic fam. Plaid scenester brunch single-origin coffee.</p>
-					<p>Roof party VHS tumeric trust fund, dreamcatcher shoreditch coloring book pok pok meh chicharrones leggings ethical etsy 3 wolf moon. Leggings synth af paleo 8-bit sustainable man braid bicycle rights meggings. Tote bag vegan yr put a bird on it four dollar toast lo-fi blue bottle wayfarers glossier trust fund small batch microdosing raclette edison bulb succulents. Humblebrag salvia blog seitan, pour-over raclette wolf paleo.</p>
-					<p>Adaptogen portland deep v bicycle rights banh mi YOLO skateboard wayfarers lyft fashion axe. Schlitz chambray chartreuse, brooklyn vape viral fam occupy. VHS bitters kickstarter single-origin coffee fingerstache man braid keytar four loko flexitarian. Vinyl twee hot chicken, hella snackwave humblebrag cardigan kale chips tumeric health goth. Occupy ramps next level gastropub echo park chicharrones lo-fi activated charcoal lomo pork belly kitsch gentrify viral. Letterpress health goth street art, pabst green juice portland tilde direct trade small batch stumptown.</p>
-					<p>Cardigan poke organic pinterest gentrify selfies. Gentrify jianbing cardigan food truck, asymmetrical salvia chartreuse bitters. Hexagon next level locavore retro snackwave neutra brooklyn. Aesthetic flexitarian edison bulb subway tile paleo, pabst XOXO. Flannel art party neutra, vegan roof party pour-over gastropub la croix kinfolk kitsch cold-pressed aesthetic cardigan XOXO. Pickled thundercats skateboard deep v intelligentsia 8-bit. Beard 90's humblebrag shoreditch bicycle rights before they sold out heirloom.</p>
-					<p>Meggings live-edge la croix salvia shaman hammock neutra PBR&B locavore gastropub. Jianbing chillwave bitters sartorial. Thundercats fanny pack messenger bag, helvetica banjo twee pinterest post-ironic iPhone prism hell of. Tbh cold-pressed farm-to-table hammock thundercats direct trade, four dollar toast pok pok snackwave freegan roof party humblebrag PBR&B hot chicken truffaut. Knausgaard ethical gluten-free messenger bag deep v poutine. Vexillologist scenester PBR&B polaroid, slow-carb green juice YOLO humblebrag.</p>
-					
-					<br>
-					Oh. You need a little dummy text for your mockup? How quaint.
-					<br>
-					I bet you’re still using Bootstrap too…
-				</div>
+
+				<div id="footer"></div>
 			</div>
 
 		</div>
+
+	<script type="text/javascript">
+		function displayMore() {
+			document.getElementById('viewMore').style.display = "none";
+			var elements = document.getElementsByClassName('hidden');
+    		for(var i = 0; i < elements.length; i++)
+    		{
+       			if( elements[i].style.display = 'none'){
+          			elements[i].style.display = 'block';
+       			} 
+    		}
+		}
+
+		function displayLess() {
+			document.getElementById('viewMore').style.display = "block";
+			var elements = document.getElementsByClassName('hidden');
+    		for(var i = 0; i < elements.length; i++)
+    		{
+       			if( elements[i].style.display == 'block'){
+          			elements[i].style.display = 'none';
+       			} 
+    		}
+		}
+	</script>
 	</body>
 </html>
